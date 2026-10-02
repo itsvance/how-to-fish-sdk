@@ -1,0 +1,42 @@
+# .gitignore для How to Fish SDK
+# Реальные сейвы не коммитим
+
+# Сейвы игры
+Saves/
+*.backup
+local.txt
+steam_autocloud.vdf
+*.txt.bak
+
+# Логи игры
+Player.log
+Player-prev.log
+LogOutput.log
+
+# BepInEx рантайм
+BepInEx/cache/
+BepInEx/LogOutput.log
+BepInEx/*.log
+
+# Сборка C#
+bin/
+obj/
+*.dll
+!examples/**/*.dll
+*.pdb
+*.user
+.vs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Cheat Engine
+*.CETRAINER
+cheat-engine/*.tmp
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

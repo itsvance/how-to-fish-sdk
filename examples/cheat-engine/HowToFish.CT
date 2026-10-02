@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <Description>"Money (Int32)"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <CheatEntry>
+        <Description>"Подсказка: точное число смотри в &lt;World&gt;.txt Money (было 99247)"</Description>
+      </CheatEntry>
+      <!-- Mono-указатель: Assembly-CSharp.dll / MoneyManager / Instance / _money -->
+      <!-- CE: Mono -&gt; Activate -&gt; Assembly-CSharp.dll -&gt; MoneyManager -&gt; Instance -&gt; _money -->
+    </CheatEntry>
+    <CheatEntry>
+      <Description>"Euro (Int32)"</Description>
+      <VariableType>4 Bytes</VariableType>
+    </CheatEntry>
+    <CheatEntry>
+      <Description>"Health (Int32, старт 50)"</Description>
+      <VariableType>4 Bytes</VariableType>
+    </CheatEntry>
+    <CheatEntry>
+      <Description>"Fullness (Int32, старт 21)"</Description>
+      <VariableType>4 Bytes</VariableType>
+    </CheatEntry>
+    <CheatEntry>
+      <Description>"WalkSpeed (Float) PlayerMovement._walkSpeed"</Description>
+      <VariableType>Float</VariableType>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>How to Fish v1.1.3 Unity 6000.4.4f1 Mono. Money/Health = 4 Bytes Exact. Указатели строй от MoneyManager.Instance и PlayerManager.Players через Mono. Хост-перезапись: правки джоинера не реплицируются.</Comments>
+</CheatTable>

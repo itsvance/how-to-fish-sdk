@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>x64</Platforms>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>HowToFish.SDK</AssemblyName>
+    <Description>How to Fish SDK by Vance, BepInEx 5.4.23.5, game 1.1.3</Description>
+    <Authors>Vance</Authors>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Положи пути под свою машину -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\SteamLibrary\steamapps\common\How to Fish\How to Fish\How to Fish_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\SteamLibrary\steamapps\common\How to Fish\How to Fish\How to Fish_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>E:\SteamLibrary\steamapps\common\How to Fish\How to Fish\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>E:\SteamLibrary\steamapps\common\How to Fish\How to Fish\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="FishNet.Runtime">
+      <HintPath>E:\SteamLibrary\steamapps\common\How to Fish\How to Fish\How to Fish_Data\Managed\FishNet.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MinimalPlugin.cs" />
+    <Compile Include="GodMode.cs" />
+    <Compile Include="SpeedTeleport.cs" />
+    <Compile Include="AchievementUnlocker.cs" />
+  </ItemGroup>
+</Project>
